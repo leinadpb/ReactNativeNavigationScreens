@@ -12,6 +12,10 @@ const RootNavigation = createStackNavigator({
   Login:{screen:LoginScreen},
   Signup:{screen:SignupScreen},
   DrawerNavigator:{screen:DrawerNavigator },
+},{
+  navigationOptions:{
+    gesturesEnabled:false,
+  }
 });
 
 export default class App extends React.Component {
